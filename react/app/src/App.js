@@ -15,15 +15,15 @@ export default class App extends Component {
       .then(([Map, MapView]) => {
 
         const map = new Map({
-          basemap: 'gray-vector'
+          basemap: 'dark-gray-vector'
         });
 
         const view = new MapView({
           map: map,
           container: 'mapContainer',
-          basemap: 'gray-vector',
-          center: [-100, 30],
-          zoom: 5
+          basemap: 'dark-gray-vector',
+          center: [-98, 39],
+          zoom: 4
         });
 
       })
@@ -36,7 +36,7 @@ export default class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <h1>Welcome to ESRI React App</h1>
+          <h1>Richard's ArcGIS JS React Test</h1>
         </div>
         <div id="mapContainer"/>
       </div>
